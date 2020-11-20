@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom'
-import Button from './Button'
+import Icon from './icon'
 
 render(
-    <Button/>,document.getElementById('root'),
+    <Icon name='planet'/>,document.getElementById('root'),
 )
