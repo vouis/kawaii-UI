@@ -1,7 +1,4 @@
 import * as React from 'react';
-import '../../assets/images/planet.svg';
-// import planet from '../../assets/images/planet.svg';
-// import planet from '@assets/images/planet.svg';
 import './importAllIcons'
 interface IconProps{
     name:String;
