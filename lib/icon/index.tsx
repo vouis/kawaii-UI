@@ -8,8 +8,8 @@ interface IconProps{
 const Icon:React.FunctionComponent<IconProps> =(props)=>{
 
     return (
-        <div>
-            <svg>
+        <div >
+            <svg className='kawaii_icon'>
                 <use xlinkHref={`#${props.name}`}/>
             </svg>
         </div>
