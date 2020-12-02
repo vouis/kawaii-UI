@@ -1,17 +1,17 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
-    verbose: true,
-    clearMocks: false,
-    reporters: ["default"],
+  verbose: true,
+  clearMocks: false,
+  reporters: ["default"],
 
-    collectCoverage: true,
+  collectCoverage: false,
 
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     moduleDirectories: ['node_modules'],
     globals: {
         'ts-jest': {
-            tsconfig: 'tsconfig.json',
+            tsconfig: 'tsconfig.test.json',
         },
     },
     moduleNameMapper: {
