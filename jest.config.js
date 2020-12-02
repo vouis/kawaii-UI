@@ -5,7 +5,7 @@ module.exports = {
     clearMocks: false,
     reporters: ["default"],
 
-    collectCoverage: false,
+    collectCoverage: true,
 
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     moduleDirectories: ['node_modules'],
