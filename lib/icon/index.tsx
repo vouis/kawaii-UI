@@ -1,16 +1,17 @@
 import * as React from 'react';
 import './importAllIcons'
 import './index.scss'
-interface IconProps{
-    name:String;
+import classes from './utils/classes';
+interface IconProps extends React.SVGAttributes<SVGElement>{
+    name:string;
 }
 
 const Icon:React.FunctionComponent<IconProps> =(props)=>{
-
+const {className,name,...restProps} = props
     return (
         <div >
-            <svg className='kawaii_icon'>
-                <use xlinkHref={`#${props.name}`}/>
+            <svg className={classes('kawaii_icon',className)} {...restProps}>
+                <use xlinkHref={`#${name}`}/>
             </svg>
         </div>
     );

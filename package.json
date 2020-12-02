@@ -29,10 +29,13 @@
     "@types/react-test-renderer": "^16.9.3",
     "awesome-typescript-loader": "^5.2.1",
     "babel-jest": "^26.6.3",
+    "babel-preset-react-app": "^10.0.0",
     "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "html-webpack-plugin": "^4.5.0",
     "jest": "^26.6.3",
-    "react-test-renderer": "^17.0.1",
+    "react-test-renderer": "^16.13.1",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
@@ -43,8 +46,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "svg-sprite-loader": "^5.0.0"
   }
 }
