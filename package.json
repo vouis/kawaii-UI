@@ -1,6 +1,6 @@
 {
-  "name": "kawaii-ui",
-  "version": "0.0.2",
+  "name": "kawaii-ui-test",
+  "version": "0.0.0",
   "description": "",
   "main": "dist/lib/index",
   "types": "dist/lib/index",

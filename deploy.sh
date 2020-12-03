@@ -1,3 +1,3 @@
-npm version $1
-#.mirror.patch
-git push
+#!/bin/env bash
+npm version $1 && git push
+#.minor.patch
