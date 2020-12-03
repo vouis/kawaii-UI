@@ -21,6 +21,15 @@ jobs:
           root: .
           paths:
             - node_modules
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: yarn ci
+      - store_test_results:
+          path: test-results
   build:
     <<: *defaults
     steps:
@@ -35,15 +44,6 @@ jobs:
             - package.json
             - LICENSE
             - README.md
-  test:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: yarn ci
-      - store_test_results:
-          path: test-results
   publish:
     <<: *defaults
     steps:
@@ -59,17 +59,17 @@ workflows:
   build_accept_deploy:
     jobs:
       - prepare
-      - build:
-          requires:
-            - test
       - test:
           requires:
             - prepare
+      - build:
+          requires:
+            - test
       - publish:
           requires:
             - build
-          filters:
-            tags:
-              only: /^v[0-9]+(\.[0-9]+)*/
-            branches:
-              ignore: /.*/
+#          filters:
+#            tags:
+#              only: /^v[0-9]+(\.[0-9]+)*/
+#            branches:
+#              ignore: /.*/
