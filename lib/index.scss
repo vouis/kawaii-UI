@@ -1,0 +1,8 @@
+[class^=kawaii-]{
+  box-sizing: border-box;
+  border: 1px solid red;
+  &::after,
+  &::before{
+  box-sizing: border-box;
+}
+}
