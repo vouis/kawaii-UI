@@ -16,6 +16,14 @@
     background:fade_out(black,0.5);
   }
   &-close{
+    position:absolute;
+    bottom:100%;
+    left:100%;
+    background:white;
+    width:2em;
+    height: 2em;
+    border-radius: 50%;
+    transform:translate(-50%,-50%)
   }
   &-header{
 
