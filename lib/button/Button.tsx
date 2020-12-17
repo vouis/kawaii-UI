@@ -1,4 +1,5 @@
 import React from "react";
+import './button.scss'
 interface Props extends React.ButtonHTMLAttributes<any>{
 
 }

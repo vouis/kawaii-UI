@@ -17,15 +17,13 @@ const Dialog:React.FunctionComponent<Props> =(props)=>{
 
     return (visible?
         <Fragment>
-        <div className={classes('mask')}></div>
+        <div className={classes('mask')}/>
         <div className={classes()}>
-            <div className={classes('close')}>
-                <Icon name='close'></Icon>
-            </div>
-            <header className={classes('header')}></header>
+            <Icon name='close' className={classes('close')}></Icon>
+            <header className={classes('header')}>{'header'}</header>
             <main className={classes('main')}>{children}</main>
             <footer className={classes('footer')}><Button {...restProps}>OK</Button></footer>
-            </div>
+        </div>
         </Fragment>
         :null)
 }

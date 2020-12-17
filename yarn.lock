@@ -2863,6 +2863,13 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
+dart-sass@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/dart-sass/-/dart-sass-1.25.0.tgz#e00c0348118916e9d81cb485297184c131af1dad"
+  integrity sha512-syNOAstJXAmvD3RifcDk3fiPMyYE2fY8so6w9gf2/wNlKpG0zyH+oiXubEYVOy1WAWkzOc72pbAxwx+3OU4JJA==
+  dependencies:
+    chokidar ">=2.0.0 <4.0.0"
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/dashdash/download/dashdash-1.14.1.tgz?cache=0&sync_timestamp=1601073454623&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdashdash%2Fdownload%2Fdashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"

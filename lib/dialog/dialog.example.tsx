@@ -9,7 +9,7 @@ const DialogExample:React.FunctionComponent = ()=>{
     return(<div>
         <Button onClick={()=>setVisible(true)}>dialog</Button>
         <Dialog visible={visible} onClick={onClick}>
-content
+        content
         </Dialog>
     </div>)
 }
