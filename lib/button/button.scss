@@ -1,0 +1,13 @@
+@import 'lib/util/_color.scss';
+.kawaii-button{
+  &-wrapper{
+    color:$main-color;
+    background: white;
+    border-radius: 8%;
+    border:1px solid $main-color;
+  }
+  &-wrapper:hover{
+    border:1px solid $rose-color;
+    cursor: pointer;
+  }
+}
