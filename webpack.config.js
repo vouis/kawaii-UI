@@ -1,5 +1,4 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         index: './lib/index.tsx'
@@ -12,6 +11,7 @@ module.exports = {
         library: 'kawaii',
         libraryTarget: 'umd',
     },
+    devtool: 'eval-source-map',
     module: {
         rules: [
             {

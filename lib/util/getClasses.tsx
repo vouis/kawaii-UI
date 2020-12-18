@@ -1,6 +1,7 @@
-const getClasses = (prefixCls:string) =>{
+const getClasses = (prefixCls:string,className?:string|undefined) =>{
     return  (name?:string)=>{
-        return [prefixCls,name].filter(Boolean).join('-')
+        const classString = [prefixCls,name].filter(Boolean).join('-');
+        return [classString,className].filter(Boolean).join(' ');
     }
 }
 export default getClasses;

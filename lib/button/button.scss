@@ -2,9 +2,10 @@
 .kawaii-button{
   &-wrapper{
     color:$main-color;
-    background: white;
+    background:floralwhite;
     border-radius: 8%;
     border:1px solid $main-color;
+    padding:2px 3px;
   }
   &-wrapper:hover{
     border:1px solid $rose-color;
