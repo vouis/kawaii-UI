@@ -7,7 +7,7 @@ const DialogExample:React.FunctionComponent = ()=>{
         setVisible(false)
     }
     return(<div>
-        <Button onClick={()=>setVisible(true)}>dialog</Button>
+        <Button onClick={()=>setVisible(true)} >dialog</Button>
         <Dialog visible={visible} onCancel={onCancel}>
         content
         </Dialog>

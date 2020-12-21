@@ -22,7 +22,7 @@ const Dialog:React.FunctionComponent<Props> =(props)=>{
     const {visible,children,onCancel,maskClosable,...restProps} = props;
     const dialogChild = (visible?
         <Fragment>
-            <div className={classes('mask')} onClick={maskClosable?onCancel:()=>{}}/>
+            <div className={classes('mask')} onClick={maskClosable||maskClosable!==false?onCancel:()=>{}}/>
             <div className={classes()}>
                 <Icon name='close' className={classes('close') } onClick={onCancel}/>
                 <header className={classes('header')}>{'header'}</header>
@@ -33,6 +33,7 @@ const Dialog:React.FunctionComponent<Props> =(props)=>{
             </div>
         </Fragment>
         :null);
+
     return ReactDOM.createPortal(dialogChild, document.body);
 }
 
