@@ -4,7 +4,12 @@ interface Props {
 
 }
 const ButtonExample:React.FunctionComponent<Props>=()=>{
-    return (<Button onClick={()=>console.log('click')} >button</Button>);
+    return (
+        <div>
+            <Button theme={'2077'} onClick={()=>console.log('click')}>2077</Button>
+        </div>
+
+    );
 
 }
 export default ButtonExample;

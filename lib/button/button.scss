@@ -1,14 +1,112 @@
 @import 'lib/util/_color.scss';
 .kawaii-button{
-  &-wrapper{
-    color:$main-color;
+  &-rose{
+    color:$pink-color;
     background:floralwhite;
     border-radius: 8%;
-    border:1px solid $main-color;
+    border:1px solid $pink-color;
     padding:2px 3px;
   }
-  &-wrapper:hover{
+  &-rose:hover{
     border:1px solid $rose-color;
     cursor: pointer;
   }
+
+  &-2077{
+    color:white;
+    cursor: pointer;
+    background:linear-gradient(45deg,#F8F005 5%,#FF013C 5%);
+    box-shadow: 2px 0px 0px #00E6F6;
+    outline:transparent;
+    padding:2px 10px;
+    position: relative;
+  }
+  &-2077-glitch{
+    --slice-0:inset(50% 50% 50% 50%);
+    --slice-1:inset(80% -2px 0 0);
+    --slice-2:inset(50% -2px 30% 0);
+    --slice-3:inset(10% -2px 85% 0);
+    --slice-4:inset(40% -2px 43% 0);
+    --slice-5:inset(80% -2px 5% 0);
+
+    color:white;
+    background:linear-gradient(45deg,#F8F005 5%,#FF013C 5%);
+    box-shadow: 2px 0px 0px #00E6F6;
+    outline:transparent;
+    padding:2px 10px;
+    // content: attr(children);
+    display:block;
+    position: absolute;
+    cursor: pointer;
+    top:0;
+    left:0;
+    text-shadow: -2px -2px 0px #F8F005,2px 2px 0px #00E6F6;
+    clip-path:var(--slice-0);
+
+    transform: translate(-3%, 3%)
+
+  }
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-2%, -1%);
+    }
+
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(1%, 1%);
+    }
+
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-1%, 1%);
+    }
+
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0%, 5%);
+    }
+
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5%, 0%);
+    }
+
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5%, 0%);
+    }
+
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5%, 10%);
+    }
+
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-1%, 1%);
+    }
+
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(2%, -1%);
+    }
+
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-1%, 0%);
+    }
+
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+  &-2077-glitch:hover{
+    cursor: pointer;
+    animation: 1s glitch ;
+    animation-timing-function: steps(2, end);
+  }
+
 }
