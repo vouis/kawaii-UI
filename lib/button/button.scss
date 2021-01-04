@@ -16,12 +16,15 @@
     color:white;
     cursor: pointer;
     background:linear-gradient(45deg,#F8F005 5%,#FF013C 5%);
-    box-shadow: 2px 0px 0px #00E6F6;
+    box-shadow: 2px 0 0 #00E6F6;
     outline:transparent;
     padding:2px 10px;
     position: relative;
   }
-  &-2077-glitch{
+
+  &-2077::after{
+
+    content: 'dialog';
     --slice-0:inset(50% 50% 50% 50%);
     --slice-1:inset(80% -2px 0 0);
     --slice-2:inset(50% -2px 30% 0);
@@ -29,13 +32,11 @@
     --slice-4:inset(40% -2px 43% 0);
     --slice-5:inset(80% -2px 5% 0);
 
-    color:white;
     background:linear-gradient(45deg,#F8F005 5%,#FF013C 5%);
-    box-shadow: 2px 0px 0px #00E6F6;
+    box-shadow: 2px 0 0 #00E6F6;
     outline:transparent;
     padding:2px 10px;
-    // content: attr(children);
-    display:block;
+
     position: absolute;
     cursor: pointer;
     top:0;
@@ -103,7 +104,7 @@
     }
   }
 
-  &-2077-glitch:hover{
+  &-2077:hover::after{
     cursor: pointer;
     animation: 1s glitch ;
     animation-timing-function: steps(2, end);
