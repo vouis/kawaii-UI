@@ -8,7 +8,7 @@ const LayoutExample:React.FunctionComponent = ()=> {
     return (
         <div>
             <Layout>
-                <Header>header</Header>
+                <Header style={{height:30}}>header</Header>
                 <Main>main</Main>
                 <Footer>footer</Footer>
             </Layout>

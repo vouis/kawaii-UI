@@ -1,15 +1,15 @@
 import React from 'react';
 import getClasses from "../util/getClasses";
-const cn = getClasses('kawaii-layout')
-interface Props extends React.HTMLProps<any> {
+interface Props extends React.HTMLAttributes<any> {
 
 }
 
 const Header: React.FunctionComponent<Props> = (props) => {
-const {children} = props;
+    const {className,children,...restProps} = props;
+    const cn = getClasses('kawaii-layout',className);
 
 
-    return (<div className={cn('header')}>{children}</div>);
+    return (<div className={cn('header')} {...restProps}>{children}</div>);
 }
 
 export default Header;

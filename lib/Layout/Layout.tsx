@@ -1,15 +1,16 @@
 import React from 'react';
 import getClasses from "../util/getClasses";
 import './layout.scss'
-const cn = getClasses('kawaii-layout')
 
-interface Props extends React.HTMLProps<any> {
+
+interface Props extends React.HTMLAttributes<HTMLElement> {
 
 }
 
 const Layout: React.FunctionComponent<Props> = (props) => {
-    const {children} = props;
-    return (<div className={cn('')}>{children}</div>);
+    const {className,children,...restProps} = props;
+    const cn = getClasses('kawaii-layout',className);
+    return (<div className={cn('')} {...restProps} >{children}</div>);
 }
 
 export default Layout;
