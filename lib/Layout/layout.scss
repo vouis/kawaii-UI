@@ -1,3 +1,22 @@
+@import 'lib/util/_color.scss';
 .kawaii-layout{
-    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    &-header{background:$yellow-color;}
+    &-main{
+        flex-grow: 1;
+        background:$red-color;
+    }
+    &-sider{
+        background:$blue-color;
+    }
+    &-footer{
+        background:$yellow-color;
+    }
+    &-has-sider{
+        background:black;
+        flex-direction: row;
+    }
 }
