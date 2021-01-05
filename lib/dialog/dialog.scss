@@ -3,11 +3,13 @@
   position:fixed;
   background: white;
   min-width:15em;
-  border-radius: 4px;
+  background:linear-gradient(45deg,transparent 5%,white 5%);
+  box-shadow: 2px 0 0 $blue-color;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
   z-index: 1;
+
   &-mask{
     position:fixed;
     top:0;
@@ -45,7 +47,7 @@
     display: flex;
     justify-content: flex-end;
     &-cancel{
-      margin-right: 3px;
+      margin-right: 5px;
     }
   }
 
