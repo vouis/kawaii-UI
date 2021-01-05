@@ -9,10 +9,7 @@ const Button:React.FunctionComponent<Props>=(props)=>{
     const classes = getClasses('kawaii-button',className);
     console.log(props);
     return(
-
-        <span {...restProps} className={theme?classes(theme):classes('2077')}/>
-
-
+        <span {...restProps} content-tooltip={props.children} className={theme?classes(theme):classes('2077')}/>
             )
 }
 export default Button;

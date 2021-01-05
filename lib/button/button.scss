@@ -1,22 +1,10 @@
 @import 'lib/util/_color.scss';
 .kawaii-button{
-  &-rose{
-    color:$pink-color;
-    background:floralwhite;
-    border-radius: 8%;
-    border:1px solid $pink-color;
-    padding:2px 3px;
-  }
-  &-rose:hover{
-    border:1px solid $rose-color;
-    cursor: pointer;
-  }
-
   &-2077{
     color:white;
     cursor: pointer;
-    background:linear-gradient(45deg,#F8F005 5%,#FF013C 5%);
-    box-shadow: 2px 0 0 #00E6F6;
+    background:linear-gradient(45deg,$yellow-color 5%,$red-color 5%);
+    box-shadow: 2px 0 0 $blue-color;
     outline:transparent;
     padding:2px 10px;
     position: relative;
@@ -24,7 +12,7 @@
 
   &-2077::after{
 
-    content: 'dialog';
+    content: attr(content-tooltip);
     --slice-0:inset(50% 50% 50% 50%);
     --slice-1:inset(80% -2px 0 0);
     --slice-2:inset(50% -2px 30% 0);
@@ -32,8 +20,8 @@
     --slice-4:inset(40% -2px 43% 0);
     --slice-5:inset(80% -2px 5% 0);
 
-    background:linear-gradient(45deg,#F8F005 5%,#FF013C 5%);
-    box-shadow: 2px 0 0 #00E6F6;
+    background:linear-gradient(45deg,$yellow-color 5%,$red-color 5%);
+    box-shadow: 2px 0 0 $blue-color;
     outline:transparent;
     padding:2px 10px;
 
@@ -41,7 +29,7 @@
     cursor: pointer;
     top:0;
     left:0;
-    text-shadow: -2px -2px 0px #F8F005,2px 2px 0px #00E6F6;
+    text-shadow: -2px -2px 0px $yellow-color,2px 2px 0px $blue-color;
     clip-path:var(--slice-0);
 
     transform: translate(-3%, 3%)
