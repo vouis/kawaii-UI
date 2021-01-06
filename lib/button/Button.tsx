@@ -6,10 +6,9 @@ interface Props extends React.ButtonHTMLAttributes<any>{
 }
 const Button:React.FunctionComponent<Props>=(props)=>{
     const {className,theme,...restProps} = props;
-    const cn = getClasses('kawaii-button',className);
-    console.log(props);
+    const cn = getClasses('kawaii-button');
     return(
-        <span {...restProps} content-tooltip={props.children} className={theme?cn(theme):cn('2077')}/>
+        <span {...restProps} content-tooltip={props.children} className={theme?cn(theme):cn('2077',className)}/>
             )
 }
 export default Button;

@@ -19,11 +19,11 @@ const classes = getClasses('kawaii-dialog');
 
 
 const Dialog:React.FunctionComponent<Props> =(props)=>{
-    const {visible,children,onCancel,maskClosable,...restProps} = props;
+    const {className,visible,children,onCancel,maskClosable,...restProps} = props;
     const dialogChild = (visible?
         <Fragment>
             <div className={classes('mask')} onClick={maskClosable||maskClosable!==false?onCancel:()=>{}}/>
-            <div className={classes()}>
+            <div className={classes('',className)}>
                 <Icon name='close' className={classes('close') } onClick={onCancel}/>
                 <header className={classes('header')}>{'header'}</header>
                 <main className={classes('main')}>{children}</main>
