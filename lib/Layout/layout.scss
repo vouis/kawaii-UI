@@ -4,16 +4,21 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    &-header{background:$yellow-color;}
+    &-header{
+        background:$gray-color;
+        height: 50px;
+    }
     &-main{
         flex-grow: 1;
-        background:$red-color;
+        background:$yellow-color;
     }
     &-sider{
-        background:$blue-color;
+        background:$gray-color;
+        width:50px;
     }
     &-footer{
-        background:$yellow-color;
+        background:$gray-color;
+        height: 50px;
     }
     &-has-sider{
         background:black;

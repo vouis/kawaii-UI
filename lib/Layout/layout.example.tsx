@@ -8,14 +8,14 @@ import Sider from './sider';
 const LayoutExample:React.FunctionComponent = ()=> {
     return (
         <div>
-            <div style={{margin:30,height:90,width:300}}>
+            <div style={{margin:30,height:150,width:900}}>
             <Layout>
                 <Header>header</Header>
                 <Main>main</Main>
                 <Footer>footer</Footer>
             </Layout>
             </div>
-            <div style={{margin:30,height:90,width:300}}>
+            <div style={{margin:30,height:150,width:900}}>
                 <Layout >
                     <Header>header</Header>
                     <Layout >
@@ -25,7 +25,7 @@ const LayoutExample:React.FunctionComponent = ()=> {
                     <Footer>footer</Footer>
                 </Layout>
             </div>
-            <div style={{margin:30,height:90,width:300}}>
+            <div style={{margin:30,height:150,width:900}}>
                 <Layout>
                 <Sider>Sider</Sider>
                 <Layout>
