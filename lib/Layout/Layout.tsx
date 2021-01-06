@@ -19,7 +19,6 @@ const Layout: React.FunctionComponent<Props> = (props) => {
             }
             return result;
         },'');
-console.log( children.length,CN)
 
 
     return (<div className={cn(['',CN as string],className)} {...restProps} >{children}</div>);
